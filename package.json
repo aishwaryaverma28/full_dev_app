@@ -1,20 +1,26 @@
 {
-  "name": "devtinder",
+  "name": "full_dev_app",
   "version": "1.0.0",
-  "description": "for learning backend",
-  "main": "index.js",
+  "description": "",
+  "main": "pasword.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
+    "backend": "npm --prefix backend run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
   },
-  "keywords": [
-    "nodejs",
-    "javascript",
-    "backend"
-  ],
-  "author": "aishwarya",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aishwaryaverma28/full_dev_app.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^5.2.1"
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/aishwaryaverma28/full_dev_app/issues"
+  },
+  "homepage": "https://github.com/aishwaryaverma28/full_dev_app#readme",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
   }
 }
